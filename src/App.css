@@ -1,0 +1,88 @@
+.header-container {
+  background: #23180d;
+  text-align: center;
+  line-height: 5rem;
+}
+
+.header-container h1 {
+  margin: 0;
+}
+
+.section-container {
+  background: #2d2013;
+  margin: 0 10%;
+}
+
+.filter-section-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.find-recipe-button {
+  position: absolute;
+  margin-top: 2%;
+  font-size: 1rem;
+  font-weight: 500;
+  left: 45%;
+  background: #c52d2f;
+  color: #ffffff;
+  line-height: 24px;
+  padding: 5px 12px;
+  border-radius: 3px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 40%;
+}
+
+.seperator {
+  width: 100%;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  margin-top: 10%;
+}
+
+.meal-image {
+  height: 10rem;
+  width: 10rem;
+}
+
+.meal-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  row-gap: 10px;
+}
+
+.meal-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.meal-name {
+  text-align: left;
+  color: #d57d1f;
+}
+
+@media only screen and (max-width: 760px) {
+  .filter-section-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .filter-container {
+    width: 100%;
+  }
+
+  .find-recipe-button {
+    left: 35%;
+  }
+
+  .seperator {
+    margin-top: 20%;
+  }
+}
