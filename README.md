@@ -3,7 +3,7 @@ This is a
 # Recipe Generator Project using Javascript and React framework and Redux toolkit for state management.
 
 Users can search for possible recipes based on ingredients, quantity and meal type.
-Users can follow the text based instruction as well as go through the You Tube video to watch the recipe.
+Users can follow the text based instruction as well as refer the YouTube video to watch the preperation recipe.
 
 # The project is deployed on GITHUB PAGES and can be accessed using URL https://swapnil-chauhan.github.io/recipe-generator/
 
@@ -23,15 +23,15 @@ the project will start on http://localhost:3000
 
 ##### First Screen
 
-the first page consist of having two filter options( dropdowns ) using ingredients (multi select) and meal type.
-The values in the dropdown are made available from below REST APIs
+the first page consist of two filter options( dropdowns ) "using ingredients" (multi select) and "meal type".
+The values in the dropdowns are extracted from below REST APIs
 
 # www.themealdb.com/api/json/v1/1/list.php?c=list
 
 # www.themealdb.com/api/json/v1/1/list.php?i=list
 
-The Find Recipe button will make a call to 2 backend APIs to fetch recipes based on selected ingredient and mealType.
-We will find the common recipes from both the results and show it on the UI.
+The "Find Recipe" button will make a call to 2 backend APIs to fetch recipes based on selected ingredient and meal Type.
+The user can find the common recipes from both the results and see it on the UI.
 
 # www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast,garlic,salt
 
@@ -42,7 +42,7 @@ User can click on the Recipe Name below the Image to naviagte to second screen.
 ##### Second Screen
 
 Second screen will provide all the ingredients and their mesaures required for the recipe.
-Also the video link as well as written instructions will be provided on this page.
+The video link as well as written instructions will be provided on this page.
 
 API used to get the recipe details is:
 
