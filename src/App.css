@@ -1,7 +1,21 @@
 .header-container {
   background: #23180d;
-  text-align: center;
   line-height: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.home-button {
+  position: absolute;
+  margin-top: 2%;
+  font-size: 1rem;
+  font-weight: 500;
+  left: 80%;
+  background: #c52d2f;
+  color: #ffffff;
+  line-height: 24px;
+  padding: 5px 12px;
+  border-radius: 3px;
 }
 
 .header-container h1 {
@@ -42,7 +56,7 @@
   width: 100%;
   border: 1px solid #ffffff;
   background: #ffffff;
-  margin-top: 10%;
+  margin-top: 8%;
 }
 
 .meal-image {
@@ -66,9 +80,118 @@
 .meal-name {
   text-align: left;
   color: #d57d1f;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  width: 60%;
+  overflow: hidden;
+}
+
+.meal-name:hover {
+  transition: color 300ms, background-color 300ms;
+  color: #ffcb69;
+}
+
+.no-meals-found {
+  margin-top: 7%;
+  left: 45%;
+  position: absolute;
+}
+
+.meal-image-container {
+  display: flex;
+  flex-direction: column;
+  left: 10%;
+  position: absolute;
+}
+
+.meal-image-container a {
+  color: #d57d1f;
+  text-decoration: underline;
+}
+
+.meal-image-container a:hover {
+  color: #ffcb69;
+  text-decoration: underline;
+}
+
+.meal-image-details {
+  height: 20rem;
+  width: 20rem;
+}
+
+.ingredients-heading {
+  left: 40%;
+  position: absolute;
+}
+
+.ingredients-instructions-container {
+  left: 40%;
+  position: absolute;
+}
+
+.ingredients-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 6%;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.ingredients-container-less {
+  width: 50%;
+}
+
+.ingredients-container-more {
+  width: 100%;
+}
+
+.ingredients-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.ingredients-image {
+  height: 5rem;
+  width: 5rem;
+}
+
+.measure-text {
+  text-align: center;
+  color: #d57d1f;
+}
+
+.measure-text:hover {
+  text-decoration: underline;
+  color: #ffcb69;
+}
+
+.mealbyingredient-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  row-gap: 20px;
+}
+
+.mealbyingredient-image-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
 }
 
 @media only screen and (max-width: 760px) {
+  .header-container {
+    justify-content: flex-start;
+  }
+
+  .header-container h1 {
+    margin-left: 10%;
+  }
+
+  .home-button {
+    margin-top: 5%;
+  }
+
   .filter-section-container {
     flex-direction: column;
     width: 100%;
@@ -80,9 +203,38 @@
 
   .find-recipe-button {
     left: 35%;
+    margin-top: 4%;
   }
 
   .seperator {
     margin-top: 20%;
+  }
+
+  .meal-list-container {
+    flex-direction: column;
+    margin-top: 4%;
+  }
+
+  .meal-name {
+    width: 70%;
+  }
+
+  .meal-container {
+    width: 60%;
+  }
+
+  .no-meals-found {
+    margin-top: 15%;
+    left: 35%;
+  }
+
+  .ingredients-heading {
+    left: 10%;
+    top: 55%;
+  }
+
+  .ingredients-instructions-container {
+    left: 10%;
+    top: 60%;
   }
 }

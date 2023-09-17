@@ -30,6 +30,7 @@ const ReactSelect = ({ options, placeholder, onChange, isMulti }) => {
 
   return (
     <Select
+      required={true}
       options={options}
       placeholder={placeholder}
       isSearchable={true}
