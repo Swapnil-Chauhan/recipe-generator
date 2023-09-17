@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Swapnil-Chauhan/recipe-generator/static/css/main.334adec9.css",
+    "main.js": "/Swapnil-Chauhan/recipe-generator/static/js/main.c60de675.js",
+    "static/js/787.c0a24de9.chunk.js": "/Swapnil-Chauhan/recipe-generator/static/js/787.c0a24de9.chunk.js",
+    "index.html": "/Swapnil-Chauhan/recipe-generator/index.html",
+    "main.334adec9.css.map": "/Swapnil-Chauhan/recipe-generator/static/css/main.334adec9.css.map",
+    "main.c60de675.js.map": "/Swapnil-Chauhan/recipe-generator/static/js/main.c60de675.js.map",
+    "787.c0a24de9.chunk.js.map": "/Swapnil-Chauhan/recipe-generator/static/js/787.c0a24de9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.334adec9.css",
+    "static/js/main.c60de675.js"
+  ]
+}
