@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+This is a
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Recipe Generator Project using Javascript and React framework and Redux toolkit for state management.
 
-## Available Scripts
+Users can search for possible recipes based on ingredients, quantity and meal type.
+Users can follow the text based instruction as well as go through the You Tube video to watch the recipe.
 
-In the project directory, you can run:
+# The project is deployed on GITHUB PAGES and can be accessed using URL https://swapnil-chauhan.github.io/recipe-generator/
 
-### `npm start`
+To run the application on your local desktop
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# clone the repo from https://github.com/Swapnil-Chauhan/recipe-generator
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+go to project root directory
 
-### `npm test`
+# run npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# run npm start
 
-### `npm run build`
+the project will start on http://localhost:3000
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+############################# Project Details ########################################
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##### First Screen
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+the first page consist of having two filter options( dropdowns ) using ingredients (multi select) and meal type.
+The values in the dropdown are made available from below REST APIs
 
-### `npm run eject`
+# www.themealdb.com/api/json/v1/1/list.php?c=list
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# www.themealdb.com/api/json/v1/1/list.php?i=list
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The Find Recipe button will make a call to 2 backend APIs to fetch recipes based on selected ingredient and mealType.
+We will find the common recipes from both the results and show it on the UI.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast,garlic,salt
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
 
-## Learn More
+User can click on the Recipe Name below the Image to naviagte to second screen.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+##### Second Screen
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Second screen will provide all the ingredients and their mesaures required for the recipe.
+Also the video link as well as written instructions will be provided on this page.
 
-### Code Splitting
+API used to get the recipe details is:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# www.themealdb.com/api/json/v1/1/lookup.php?i=52772
 
-### Analyzing the Bundle Size
+User can select any ingredient and navigate to the third screen.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# TODO ---- can be enhanced in future if API is provided
 
-### Making a Progressive Web App
+currently user can select an ingredient on second screen and it will provide list of all recipes using that one ingredient.
+But it can be modified to also include the ingredient quantity as a parameter and then search for the recipes.
+Currently we do not have an API to search for recipes based on quantity.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Third Screen
 
-### Advanced Configuration
+this screen will provide all the recipes using the ingredient selected on second screen.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+API used to fetch the data is
 
-### Deployment
+# www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+From the list of recipes displayed on this screen user can select any recipe and will be redirected to second screen which will provide details of the recipe.
 
-### `npm run build` fails to minify
+# Home Button
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+User can click on the Home button in header and navigate to the first screen with all filters cleared out.
