@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Swapnil-Chauhan/recipe-generator/static/css/main.334adec9.css",
-    "main.js": "/Swapnil-Chauhan/recipe-generator/static/js/main.c60de675.js",
-    "static/js/787.c0a24de9.chunk.js": "/Swapnil-Chauhan/recipe-generator/static/js/787.c0a24de9.chunk.js",
-    "index.html": "/Swapnil-Chauhan/recipe-generator/index.html",
-    "main.334adec9.css.map": "/Swapnil-Chauhan/recipe-generator/static/css/main.334adec9.css.map",
-    "main.c60de675.js.map": "/Swapnil-Chauhan/recipe-generator/static/js/main.c60de675.js.map",
-    "787.c0a24de9.chunk.js.map": "/Swapnil-Chauhan/recipe-generator/static/js/787.c0a24de9.chunk.js.map"
+    "main.css": "/recipe-generator/static/css/main.334adec9.css",
+    "main.js": "/recipe-generator/static/js/main.98bd2c5c.js",
+    "static/js/787.c0a24de9.chunk.js": "/recipe-generator/static/js/787.c0a24de9.chunk.js",
+    "index.html": "/recipe-generator/index.html",
+    "main.334adec9.css.map": "/recipe-generator/static/css/main.334adec9.css.map",
+    "main.98bd2c5c.js.map": "/recipe-generator/static/js/main.98bd2c5c.js.map",
+    "787.c0a24de9.chunk.js.map": "/recipe-generator/static/js/787.c0a24de9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.334adec9.css",
-    "static/js/main.c60de675.js"
+    "static/js/main.98bd2c5c.js"
   ]
 }
