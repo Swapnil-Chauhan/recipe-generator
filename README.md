@@ -3,7 +3,7 @@ This is a
 # Recipe Generator Project using Javascript and React framework and Redux toolkit for state management.
 
 Users can search for possible recipes based on ingredients, quantity and meal type.
-Users can follow the text based instruction as well as refer the YouTube video to watch the preperation recipe.
+Users can follow the text based instruction as well as refer the YouTube video to watch the preperation.
 
 # The project is deployed on GITHUB PAGES and can be accessed using URL https://swapnil-chauhan.github.io/recipe-generator/
 
